@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getallenrader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="intro-overlay" id="intro">
+        <div class="intro-content">
+            <h1>Welkom bij de <span>Getallenrader</span> van Sander</h1>
+            <p>Klik hieronder om te beginnen met het spel!</p>
+            <button id="start-intro">Start</button>
+        </div>
+    </div>
+
+    <audio id="Achtergrondmuziekje" src="Audio/Achtergrondmuziek.MP3" loop></audio>
+
+    <h1>Raad het Getal!</h1>
+    <p>Probeer het juiste getal tussen 1 en 10 te raden. Gebruik de “+” en “-” knop om je gok aan te passen en klik
+        daarna op “Controleer”.</p>
+
+    <h2 id="weergave">0</h2>
+
+    <div class="knoppen">
+        <button id="min">-</button>
+        <button id="plus">+</button>
+    </div>
+
+    <button id="controleer">Controleer</button>
+
+    <p id="hint"></p>
+    <p id="levens">Levens: ❤️❤️❤️</p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
