@@ -1,3 +1,4 @@
+// HTML code die we kunnen aanpassen met JS 
 const intro = document.getElementById('intro');
 const startKnop = document.getElementById('start-intro');
 const audio = document.getElementById('Achtergrondmuziekje');
@@ -48,14 +49,21 @@ checkBtn.addEventListener('click', () => {
         checkBtn.disabled = true; // Je hoeft niet meer te raden
     } else {
         levens--; // Je verliest een leven
+
         // Geeft een hint of je hoger of lager moet raden
-        hintEl.textContent = getal < mystery ? 'Te laag!' : 'Te hoog!';
+        if (getal < mystery) {
+            hintEl.textContent = 'Te laag!';
+        } else {
+            hintEl.textContent = 'Te hoog!';
+        }
+
         updateUI(); // Laat het nieuwe aantal levens zien
+
         if (levens === 0) {
             alert('Game Over! Het juiste getal was ' + mystery);
             location.reload();
         }
-        }
+    }
 });
 
 updateUI();
