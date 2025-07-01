@@ -10,7 +10,7 @@ startKnop.addEventListener('click', () => {
 });
 
 // Variabelen die we nodig hebben voor het spel
-let getal = 0; 
+let getal = 0; // Getal dat jij kiest om te raden
 let levens = 3; // Je hebt 3 kansen om het goed te raden
 let mystery = Math.floor(Math.random() * 10) + 1; // De computer kiest een getal tussen 1 en 10
 console.log("Mystery is:", mystery); // Om aan te tonen of dit goed is gekoppeld met het HTML bestand
