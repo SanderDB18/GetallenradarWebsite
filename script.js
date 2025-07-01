@@ -10,18 +10,18 @@ startKnop.addEventListener('click', () => {
 });
 
 // Variabelen die we nodig hebben voor het spel
-let getal = 0;
+let getal = 0; 
 let levens = 3; // Je hebt 3 kansen om het goed te raden
 let mystery = Math.floor(Math.random() * 10) + 1; // De computer kiest een getal tussen 1 en 10
 console.log("Mystery is:", mystery); // Om aan te tonen of dit goed is gekoppeld met het HTML bestand
 
 // HTML code die we kunnen aanpassen met JS 
-const weergave = document.querySelector('#weergave'); // Waar jouw getal wordt getoond
-const hintEl = document.querySelector('#hint'); // Hier komt de hint ("Te hoog!" of "Goed zo!")
-const levensEl = document.querySelector('#levens'); // Laat zien hoeveel levens je nog hebt
-const plusBtn = document.querySelector('#plus'); // De knop om je getal hoger te maken
-const minBtn = document.querySelector('#min'); // De knop om je getal lager te maken
-const checkBtn = document.querySelector('#controleer'); // De knop om te checken of je goed zit
+const weergave = document.getElementById('weergave'); // Waar jouw getal wordt getoond
+const hintEl = document.getElementById('hint'); // Hier komt de hint ("Te hoog!" of "Goed zo!")
+const levensEl = document.getElementById('levens'); // Laat zien hoeveel levens je nog hebt
+const plusBtn = document.getElementById('plus'); // De knop om je getal hoger te maken
+const minBtn = document.getElementById('min'); // De knop om je getal lager te maken
+const checkBtn = document.getElementById('controleer'); // De knop om te checken of je goed zit
 
 // Functie om alles op het scherm te verversen
 function updateUI() {
